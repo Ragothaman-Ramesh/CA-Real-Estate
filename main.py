@@ -6,7 +6,7 @@ import seaborn as sns
 # Data Cleaning
 
 # Load the data from an Excel file
-data = pd.read_excel('real.xlsx')
+data = pd.read_excel('Real.xlsx')
 
 # Check for missing values
 print(data.isnull().sum())
