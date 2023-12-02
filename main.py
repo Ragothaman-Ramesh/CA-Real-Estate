@@ -95,11 +95,6 @@ plt.xticks(rotation=45, ha="right")
 plt.title('Violin Plot: Distribution of Median Listing Prices by County')
 plt.show()
 
-# Bar Plot: Total Listing Count by County
-plt.figure(figsize=(15, 8))
-sns.barplot(x='total_listing_count', y='county_name', data=data.sort_values('total_listing_count', ascending=False))
-plt.title('Bar Plot: Total Listing Count by County')
-plt.show()
 
 # Facet Grid: Multiple Histograms for Median Listing Prices by County
 g = sns.FacetGrid(data, col='county_name', col_wrap=4, height=4)
